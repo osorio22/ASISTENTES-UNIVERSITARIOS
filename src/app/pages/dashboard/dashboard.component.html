@@ -1,0 +1,232 @@
+
+<div class="dashboard-container">
+
+  <!-- MENU LATERAL -->
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="bi bi-mortarboard-fill"></i>
+      </div>
+      <div>
+        <h2>Asistente</h2>
+        <span>Universitario</span>
+      </div>
+    </div>
+
+    <div class="menu-title">MENÚ PRINCIPAL</div>
+
+    <nav class="sidebar-menu">
+
+      <a routerLink="/dashboard" routerLinkActive="active">
+        <i class="bi bi-grid-fill"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="#">
+        <i class="bi bi-book-fill"></i>
+        <span>Mis asignaturas</span>
+      </a>
+
+      <a href="#">
+        <i class="bi bi-calendar-week-fill"></i>
+        <span>Horario académico</span>
+      </a>
+
+      <a href="#">
+        <i class="bi bi-journal-text"></i>
+        <span>Actividades</span>
+      </a>
+
+      <a href="#">
+        <i class="bi bi-person-fill"></i>
+        <span>Mi perfil</span>
+      </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="help-box">
+        <i class="bi bi-headset"></i>
+        <h4>¿Necesitas ayuda?</h4>
+        <p>Estamos aquí para apoyarte.</p>
+      </div>
+
+      <button class="logout-button" (click)="CerrarSesion()">
+        <i class="bi bi-box-arrow-right"></i>
+        Cerrar sesión
+      </button>
+    </div>
+
+  </aside>
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content">
+
+    <!-- ENCABEZADO -->
+    <header class="topbar">
+
+      <div>
+        <span class="breadcrumb">Página principal / Dashboard</span>
+        <h2>Panel principal</h2>
+      </div>
+
+      <div class="user-profile">
+        <div class="notification">
+          <i class="bi bi-bell"></i>
+          <span></span>
+        </div>
+
+        <div class="user-avatar">
+          <i class="bi bi-person-fill"></i>
+        </div>
+
+        <div class="user-info">
+          <strong>{{ usuario }}</strong>
+          <span>Estudiante</span>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- BIENVENIDA -->
+    <section class="welcome-section">
+
+      <div class="welcome-text">
+        <span>ASISTENTE UNIVERSITARIO</span>
+
+        <h1>¡Bienvenido de nuevo!</h1>
+
+        <p>
+          Nos alegra tenerte aquí. Organiza tus actividades
+          y continúa avanzando en tu formación académica.
+        </p>
+
+        <button class="welcome-button">
+          <i class="bi bi-rocket-takeoff"></i>
+          Explorar plataforma
+        </button>
+      </div>
+
+      <div class="welcome-image">
+        <i class="bi bi-mortarboard-fill"></i>
+        <i class="bi bi-book-half"></i>
+        <i class="bi bi-lightbulb-fill"></i>
+      </div>
+
+    </section>
+
+
+    <!-- TARJETAS DE RESUMEN -->
+    <section class="statistics">
+
+      <div class="stat-card">
+        <div class="stat-icon purple">
+          <i class="bi bi-book"></i>
+        </div>
+        <div>
+          <span>Asignaturas</span>
+          <h2>06</h2>
+          <small>Asignaturas matriculadas</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon blue">
+          <i class="bi bi-calendar-check"></i>
+        </div>
+        <div>
+          <span>Actividades</span>
+          <h2>12</h2>
+          <small>Actividades pendientes</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon orange">
+          <i class="bi bi-clock-history"></i>
+        </div>
+        <div>
+          <span>Horas de estudio</span>
+          <h2>24</h2>
+          <small>Horas esta semana</small>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon green">
+          <i class="bi bi-trophy"></i>
+        </div>
+        <div>
+          <span>Progreso</span>
+          <h2>75%</h2>
+          <small>Avance académico</small>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ACCESOS RAPIDOS -->
+    <section class="quick-section">
+
+      <div class="section-heading">
+        <div>
+          <h2>Accesos rápidos</h2>
+          <p>Encuentra fácilmente tus herramientas académicas.</p>
+        </div>
+      </div>
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <div class="quick-icon purple">
+            <i class="bi bi-journal-bookmark-fill"></i>
+          </div>
+          <h3>Asignaturas</h3>
+          <p>Consulta tus materias y contenidos académicos.</p>
+          <a href="#">Ver asignaturas <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="quick-card">
+          <div class="quick-icon blue">
+            <i class="bi bi-calendar3"></i>
+          </div>
+          <h3>Mi horario</h3>
+          <p>Organiza tus clases y horarios universitarios.</p>
+          <a href="#">Ver horario <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="quick-card">
+          <div class="quick-icon orange">
+            <i class="bi bi-clipboard-check"></i>
+          </div>
+          <h3>Actividades</h3>
+          <p>Revisa tus tareas y compromisos pendientes.</p>
+          <a href="#">Ver actividades <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MENSAJE FINAL -->
+    <section class="motivation-card">
+      <i class="bi bi-lightbulb-fill"></i>
+      <div>
+        <h3>¡Cada día es una nueva oportunidad para aprender!</h3>
+        <p>Organiza tu tiempo, cumple tus objetivos y construye tu futuro.</p>
+      </div>
+    </section>
+
+    <footer class="dashboard-footer">
+      Asistente Universitario © 2026 - Todos los derechos reservados.
+    </footer>
+
+  </main>
+
+</div>
